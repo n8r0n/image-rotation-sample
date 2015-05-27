@@ -18,8 +18,8 @@ and
 
     - (void) startLogoSpin;
 
-Ivars are not protected, so it is assumed that all calls in this class are done on the main thread.
+`ViewController` ivars are not protected, so it is assumed that all calls in this class are made on the main thread.
 
 The ivars maintain state, and the image animation moves to a `animationCompleting` state before ending, to let the animation wind down smoothly.  This class supports calling `startLogoSpin` immediately after callling `stopLogoSpin`, in case a new spin is initiated before the rotation of the previous spin completely finishes.
 
-If the client code needs to use this, for example, as a progress indicator, and parallel tasks will be stopping at starting at overlapping intervals, then additional client code is needed to determine when to stop the spinning, after the last parallel task completes (e.g. use a ref-counting scheme).
+If the client code needs to use this, for example, as a *progress indicator*, and parallel tasks will be stopping at starting at overlapping intervals, then additional client code is needed to determine when to stop the spinning, after the last parallel task completes (e.g. use a ref-counting scheme).
