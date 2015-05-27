@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yinyang.png" translatesAutoresizingMaskIntoConstraints="NO" id="uhk-dP-X2D">
+                                <rect key="frame" x="238" y="238" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="Pys-j3-gaa"/>
+                                    <constraint firstAttribute="height" constant="125" id="nci-Bg-wUR"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xag-rR-OBq">
+                                <rect key="frame" x="474" y="72" width="60" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="RUP-5Y-9XW"/>
+                                    <constraint firstAttribute="width" constant="60" id="W68-3J-uBC"/>
+                                </constraints>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Uy-ee-dco"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="xag-rR-OBq" secondAttribute="trailing" constant="50" id="ICy-Jr-p6R"/>
+                            <constraint firstAttribute="centerY" secondItem="uhk-dP-X2D" secondAttribute="centerY" id="Pru-3J-oKz"/>
+                            <constraint firstAttribute="centerX" secondItem="uhk-dP-X2D" secondAttribute="centerX" id="oov-hH-4kp"/>
+                            <constraint firstItem="xag-rR-OBq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="52" id="qHL-7W-kSP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageToMove" destination="uhk-dP-X2D" id="zfT-Yy-oas"/>
+                        <outlet property="startStopButton" destination="xag-rR-OBq" id="Mta-Ur-BFk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="yinyang.png" width="250" height="250"/>
+    </resources>
+</document>
