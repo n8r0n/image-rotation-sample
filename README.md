@@ -1,5 +1,5 @@
 # image-rotation-sample
-An example project for iOS image view rotation
+An example project for iOS image view rotation (project built for iOS 8 and Xcode 6.3)
 
 Based on the Stack Overflow question [answered here](http://stackoverflow.com/a/11242492/119114)
 
